@@ -1,4 +1,4 @@
-<p align="center">
+<div align="center">
     <img src="https://img.shields.io/badge/Vue-3.4.21-brightgreen.svg"/>
     <img src="https://img.shields.io/badge/Vite-5.1.5-green.svg"/>
     <img src="https://img.shields.io/badge/Element Plus-2.6.0-blue.svg"/>
@@ -6,16 +6,19 @@
     <a href="https://gitee.com/youlaiorg" target="_blank">
         <img src="https://img.shields.io/badge/Author-有来开源组织-orange.svg"/>
     </a>
-</p>
-
-
-[vue3-element-admin](https://gitee.com/youlaiorg/vue3-element-admin) 是基于 Vue3 + Vite5+ TypeScript5 + Element-Plus + Pinia 等主流技术栈构建的免费开源的后台管理前端模板（配套[后端源码](https://gitee.com/youlaiorg/youlai-boot)）。
+    <div align="center"> 中文 | <a href="./README.en-US.md">English</div>
+</div>
 
 ![](https://foruda.gitee.com/images/1708618984641188532/a7cca095_716974.png "rainbow.png")
 
-<p align="center">
- <a target="_blank" href="http://vue3.youlai.tech">👀 在线预览</a> |  <a target="_blank" href="https://juejin.cn/post/7228990409909108793">📖 阅读文档</a>  
-</p>
+<div align="center">
+  <a target="_blank" href="http://vue3.youlai.tech">👀 在线预览</a> |  <a target="_blank" href="https://juejin.cn/post/7228990409909108793">📖 阅读文档</a>  
+</div>
+
+## 项目简介
+
+[vue3-element-admin](https://gitee.com/youlaiorg/vue3-element-admin) 是基于 Vue3 + Vite5+ TypeScript5 + Element-Plus + Pinia 等主流技术栈构建的免费开源的后台管理前端模板（配套[后端源码](https://gitee.com/youlaiorg/youlai-boot)）。
+
 
 ## 项目特色
 
@@ -38,7 +41,6 @@
 ![暗黑模式](https://foruda.gitee.com/images/1709651875494206224/2a2b0b53_716974.png)
 
 ![接口文档](https://foruda.gitee.com/images/1687755822857820115/96054330_716974.png)
- 
 
 ## 项目地址
 
