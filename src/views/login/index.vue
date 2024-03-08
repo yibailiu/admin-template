@@ -64,7 +64,7 @@
         </el-tooltip>
 
         <!-- 验证码 -->
-        <el-form-item prop="captchaCode">
+        <!-- <el-form-item prop="captchaCode">
           <div class="flex-y-center w-full">
             <svg-icon icon-class="captcha" class="mx-2" />
             <el-input
@@ -82,7 +82,7 @@
               class="rounded-tr-md rounded-br-md cursor-pointer h-[48px]"
             />
           </div>
-        </el-form-item>
+        </el-form-item> -->
 
         <!-- 登录按钮 -->
         <el-button
@@ -91,25 +91,20 @@
           size="large"
           class="w-full"
           @click.prevent="handleLogin"
-          >{{ $t("login.login") }}
+        >
+          {{ $t("login.login") }}
         </el-button>
-
-        <!-- 账号密码提示 -->
-        <div class="mt-10 text-sm">
-          <span>{{ $t("login.username") }}: admin</span>
-          <span class="ml-4"> {{ $t("login.password") }}: 123456</span>
-        </div>
       </el-form>
     </el-card>
 
     <!-- ICP备案 -->
-    <div class="absolute bottom-1 text-[10px] text-center" v-show="icpVisible">
+    <!-- <div class="absolute bottom-1 text-[10px] text-center" v-show="icpVisible">
       <p>
         Copyright © 2021 - 2024 youlai.tech All Rights Reserved. 有来技术
         版权所有
       </p>
       <p>皖ICP备20006496号-3</p>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -210,9 +205,6 @@ function handleLogin() {
 
           router.push({ path: redirect, query: otherQueryParams });
         })
-        .catch(() => {
-          getCaptcha();
-        })
         .finally(() => {
           loading.value = false;
         });
@@ -247,10 +239,6 @@ watchEffect(() => {
 function checkCapslock(e: any) {
   isCapslock.value = e.getModifierState("CapsLock");
 }
-
-onMounted(() => {
-  getCaptcha();
-});
 </script>
 
 <style lang="scss" scoped>
